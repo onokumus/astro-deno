@@ -19,8 +19,8 @@ jobs:
       - name: Build Astro
         run: npm run build
 
-      - name: Deploy to Deno
-        uses: deno-land/deploy-action@v1
+      - name: Upload to Deno Deploy
+        uses: denoland/deployctl@v1
         with:
           project: "onokumus-astro-deno"
           entrypoint: server/entry.mjs

@@ -22,6 +22,6 @@ jobs:
       - name: Deploy to Deno
         uses: deno-land/deploy-action@v1
         with:
-          project: onokumus-astro-deno
+          project: "onokumus-astro-deno"
           entrypoint: server/entry.mjs
           root: dist
